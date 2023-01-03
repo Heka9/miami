@@ -1305,6 +1305,16 @@
                 behavior: "smooth"
             });
         }
+        window.addEventListener("scroll", showButton);
+        function showButton() {
+            let buttonViewportCoordinatesTop = buttonScrollToTop.getBoundingClientRect().top;
+            let scrollFromTop = window.scrollY;
+            let buttonPosition = buttonViewportCoordinatesTop + scrollFromTop;
+            if (buttonPosition > document.body.clientHeight) {
+                buttonScrollToTop.style.opacity = "1";
+                buttonScrollToTop.style.transitionDuration = "0.5s";
+            } else buttonScrollToTop.style.opacity = "0";
+        }
         window["FLS"] = false;
         isWebp();
         menuInit();

@@ -634,7 +634,7 @@ h6 {
 .page__scroll-top {
   position: fixed;
   z-index: 10;
-  border: 0.125rem solid #3E3E3E;
+  border: 0.0625rem solid #3E3E3E;
   border-radius: 50%;
   background-color: rgba(41, 39, 39, 0.4);
   -webkit-transform: translate(0px, 0px);
@@ -1098,11 +1098,11 @@ h6 {
   }
 
   .page__scroll-top {
-    width: 2.1875rem;
+    width: 2.5rem;
   }
 
   .page__scroll-top {
-    height: 2.1875rem;
+    height: 2.5rem;
   }
 
   .experience {
@@ -1333,27 +1333,27 @@ h6 {
     }
 }
 
-@supports (width: clamp( 2.1875rem , 1.7820945946rem  +  2.027027027vw , 3.125rem )) {
+@supports (width: clamp( 2.5rem , 2.2297297297rem  +  1.3513513514vw , 3.125rem )) {
     .page__scroll-top {
-      width: clamp( 2.1875rem , 1.7820945946rem  +  2.027027027vw , 3.125rem );
+      width: clamp( 2.5rem , 2.2297297297rem  +  1.3513513514vw , 3.125rem );
     }
 }
 
-@supports not (width: clamp( 2.1875rem , 1.7820945946rem  +  2.027027027vw , 3.125rem )) {
+@supports not (width: clamp( 2.5rem , 2.2297297297rem  +  1.3513513514vw , 3.125rem )) {
     .page__scroll-top {
-      width: calc(2.1875rem + 0.9375 * (100vw - 20rem) / 46.25);
+      width: calc(2.5rem + 0.625 * (100vw - 20rem) / 46.25);
     }
 }
 
-@supports (height: clamp( 2.1875rem , 1.7820945946rem  +  2.027027027vw , 3.125rem )) {
+@supports (height: clamp( 2.5rem , 2.2297297297rem  +  1.3513513514vw , 3.125rem )) {
     .page__scroll-top {
-      height: clamp( 2.1875rem , 1.7820945946rem  +  2.027027027vw , 3.125rem );
+      height: clamp( 2.5rem , 2.2297297297rem  +  1.3513513514vw , 3.125rem );
     }
 }
 
-@supports not (height: clamp( 2.1875rem , 1.7820945946rem  +  2.027027027vw , 3.125rem )) {
+@supports not (height: clamp( 2.5rem , 2.2297297297rem  +  1.3513513514vw , 3.125rem )) {
     .page__scroll-top {
-      height: calc(2.1875rem + 0.9375 * (100vw - 20rem) / 46.25);
+      height: calc(2.5rem + 0.625 * (100vw - 20rem) / 46.25);
     }
 }
 
