@@ -1317,8 +1317,12 @@
             let buttonPosition = buttonViewportCoordinatesTop + scrollFromTop;
             if (buttonPosition > document.body.clientHeight) {
                 buttonScrollToTop.style.opacity = "1";
+                buttonScrollToTop.style.visibility = "visible";
                 buttonScrollToTop.style.transitionDuration = "0.5s";
-            } else buttonScrollToTop.style.opacity = "0";
+            } else {
+                buttonScrollToTop.style.opacity = "0";
+                buttonScrollToTop.style.visibility = "hidden";
+            }
         }
         window["FLS"] = false;
         isWebp();
