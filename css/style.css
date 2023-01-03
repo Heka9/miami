@@ -1616,8 +1616,8 @@ h6 {
   .icon-menu:hover span,
   .icon-menu:hover::before,
   .icon-menu:hover::after {
-    -webkit-box-shadow: 0 0 0.1875rem 0rem #fff;
-            box-shadow: 0 0 0.1875rem 0rem #fff;
+    -webkit-box-shadow: 0 0 0.1875rem 0.0625rem #fff;
+            box-shadow: 0 0 0.1875rem 0.0625rem #fff;
   }
 
   .input:hover {

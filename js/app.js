@@ -1297,13 +1297,18 @@
             }
         }), 0);
         const buttonScrollToTop = document.querySelector(".page__scroll-top");
-        buttonScrollToTop.addEventListener("click", scrollToTop);
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: "smooth"
-            });
+        buttonScrollToTop.addEventListener("click", (function() {
+            script_scroll(0, 500);
+        }));
+        function script_scroll(target, duration) {
+            if (duration <= 0) return;
+            let difference = target - document.documentElement.scrollTop;
+            let speed = difference / duration * 10;
+            setTimeout((function() {
+                document.documentElement.scrollTop += speed;
+                if (document.documentElement.scrollTop == target) return;
+                script_scroll(target, duration - 10);
+            }), 10);
         }
         window.addEventListener("scroll", showButton);
         function showButton() {
