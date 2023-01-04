@@ -1605,6 +1605,10 @@ h6 {
     display: block;
   }
 
+  .touch .header__value:hover span {
+    display: none;
+  }
+
   .header__link span:hover::before {
     width: 100%;
   }
@@ -1618,6 +1622,13 @@ h6 {
   .icon-menu:hover::after {
     -webkit-box-shadow: 0 0 0.1875rem 0.0625rem #fff;
             box-shadow: 0 0 0.1875rem 0.0625rem #fff;
+  }
+
+  .touch .icon-menu:hover span,
+  .touch .icon-menu:hover::before,
+  .touch .icon-menu:hover::after {
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   .input:hover {
