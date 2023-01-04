@@ -476,6 +476,8 @@ h6 {
 
 .menu-open .icon-menu span {
   width: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .menu-open .icon-menu::before {
